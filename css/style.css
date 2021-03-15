@@ -307,6 +307,7 @@ body{
 @media(max-width:1200px){
   .home-bg1{
   background-image: url("../images/home-a-00-1200.png");
+      background-attachment: initial;
   }
   .en-size-md{
   font-size: 12.8px;
@@ -366,6 +367,7 @@ body{
   }
   .home-bg3{
   background-image: url("../images/home-c-00-1000.png");
+      background-attachment: initial;
   }
 
 .en-size-mdx{
