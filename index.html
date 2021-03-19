@@ -41,9 +41,41 @@
   <link rel="stylesheet" href="css/fontello.css">
   <!--my css-->
   <link rel="stylesheet" href="css/style.css">
-
+  <!--LoadingPage-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/pace.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 <body>
+  <div id="preloader">
+    <div class="p">LOADING</div>
+  </div>
+
+  <script>
+
+    paceOptions = {
+      ajax: true,
+      document: true,
+      eventLag: false
+    };
+
+    Pace.on('done', function () {
+      $('.p').delay(500).animate({ top: '30%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+
+      $('#preloader').delay(1500).animate({ top: '-100%' }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+      TweenMax.from(".title", 2, {
+        delay: 1.8,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+      })
+    });
+
+  </script>
+
   <div class="home-bg1 content">
     <div class="container-fluid">
       <div class="row white f-en en-size-md">
@@ -59,7 +91,8 @@
     </div>
     <div class="container-fluid">
       <div class="row white">
-        <div class="col-12 col-md-6 order-md-1 order-12 first" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-12 col-md-6 order-md-1 order-12 first " data-aos="fade-up" data-aos-duration="1200"
+          data-aos-delay="2500">
           <span class="f-en en-size-xxl"><i class="icon-sian"></i></span>
           <br><span class="f-en en-size-xl">A&nbsp;Visual&nbsp;Designer</span><br><span
             class="f-en en-size-lg">Web&nbsp;/&nbsp;Branding&nbsp;/&nbsp;Graphic</span>
