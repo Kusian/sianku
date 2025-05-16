@@ -7,7 +7,7 @@ body{
   margin: 0 auto;
   height: 100vh;
   cursor: url("../images/mouse.svg"),auto;
-  max-width: 1920px;
+  max-width: 100%;
   background-color: #1D1B1B;
 }
 .blockquote{
@@ -15,7 +15,7 @@ body{
 }
 
 .content {
-  max-width: 1920px;
+  max-width: 100%;
   padding: 3% 5% 3% 5%;
 }
 
@@ -418,9 +418,9 @@ body{
 }
 
 @media(max-width:1000px){
-  .home-bg1{
+  /* .home-bg1{
   background-image: url("../images/home-a-00-1000.png");
-  }
+  } */
   .home-bg3{
   background-image: url("../images/home-c-00-1000.png");
       background-attachment: initial;
@@ -463,9 +463,9 @@ body{
 }
 
 @media(max-width:768px){
-  .home-bg1{
+  /* .home-bg1{
   background-image: url("../images/home-a-00-768.png");
-  }
+  } */
   .home-bg3{
   background-image: url("../images/home-c-00-768.png");
   }
@@ -516,8 +516,8 @@ body{
 @media(max-width:576px){
   .home-bg1{
   background-image: url("../images/home-a-00-576.png");
-  min-height: 0;
-  }
+  min-height: 800px;
+  } 
     .home-bg3{
   background-image: url("../images/home-c-00-576.png");
   }
@@ -553,7 +553,7 @@ body{
   width: 33%;
 }
 .first{
-  padding-top: 0;
+  padding-bottom: 50%;
 }
 #circle{
   display: none;
