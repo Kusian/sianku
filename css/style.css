@@ -166,7 +166,7 @@ body{
 /* font-style */
 .white{
   color: #EFEFEF;
-  text-shadow: 1px 1px 3px #1D1B1B;
+  /* text-shadow: 1px 1px 3px #1D1B1B; */
 }
 .black{
   color: #1D1B1B;
