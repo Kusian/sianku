@@ -114,14 +114,11 @@
   percentPosition: true,
   transitionDuration: '0.2s'
 });
-
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
   </script>
-  
-    <script> 
-     $grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});  
-</script>
+
 
 </body>
 
