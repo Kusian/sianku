@@ -43,18 +43,11 @@
   <!--my css-->
   <link rel="stylesheet" href="css/style.css">
   <!-- waterfall img -->
-<script src="js/masonry.pkgd.min.js"></script>
+<!-- <script src="js/masonry.pkgd.min.js"></script> -->
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 </head>
 
-  <script>
-    $('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  transitionDuration: '0.2s'
-});
-  </script>
 
 <body>
   <div class="content work-bg">
@@ -112,6 +105,15 @@
     AOS.init();
   </script>
 
+    
+    <script>
+    $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  transitionDuration: '0.2s'
+});
+  </script>
 
 </body>
 
