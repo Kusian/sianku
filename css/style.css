@@ -563,3 +563,12 @@ body{
 }
 
 }
+
+/* waterfall img */
+
+.grid-item { 
+  float: left;
+  width: 24%;
+  margin-bottom: 20px;
+ }
+.grid-item--width2 { width: 200px; }
