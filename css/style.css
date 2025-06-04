@@ -358,7 +358,21 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* waterfall img */
+.grid-item { 
+  width: 24%;
+  margin: 0 10px 20px 10px;
+ }
+
+
 /* RWD */
+@media(max-width:1440px){
+.grid-item { 
+  width: 23%;
+  margin: 0 10px 20px 10px;
+ }
+
+}
 
 @media(max-width:1200px){
   .home-bg1{
@@ -415,6 +429,10 @@ body{
   .info{
     margin: 5% 0%;
   }
+  .grid-item { 
+  width: 30%;
+  margin: 0 10px 20px 10px;
+ }
 }
 
 @media(max-width:1000px){
@@ -511,6 +529,11 @@ body{
 .home-work-pic{
   padding: 5% 5% 0 0;
 }
+.grid-item { 
+  width: 31%;
+  margin: 0 5px 10px 5px;
+ }
+
 }
 
 @media(max-width:576px){
@@ -561,14 +584,10 @@ body{
 .logo-p{
   height: 100px;
 }
+.grid-item { 
+  width: 47%;
+  margin: 0 3px 6px 3px;
+ }
+
 
 }
-
-/* waterfall img */
-
-.grid-item { 
-  float: left;
-  width: 24%;
-  margin-bottom: 20px;
- }
-.grid-item--width2 { width: 200px; }
