@@ -106,18 +106,21 @@
     AOS.init();
   </script>
 
-    
-    <script>
-    $('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  transitionDuration: '0.2s'
-});
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
-  </script>
+<script>
+  var grid = document.querySelector('.grid');
+
+  var msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    transitionDuration: '0.2s'
+  });
+
+  imagesLoaded(grid).on('progress', function () {
+    // 每張圖片載入後重新排版
+    msnry.layout();
+  });
+</script>
+
 
 
 </body>
