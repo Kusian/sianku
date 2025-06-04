@@ -47,6 +47,15 @@
 
 </head>
 
+  <script>
+    $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  transitionDuration: '0.2s'
+});
+  </script>
+
 <body>
   <div class="content work-bg">
     <div class="container-fluid">
@@ -101,16 +110,6 @@
 
   <script>
     AOS.init();
-  </script>
-
-  <script>
-    $('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  // columnWidth: 100,
-  gutter: 20,
-  transitionDuration: '0.2s'
-});
   </script>
 
 
